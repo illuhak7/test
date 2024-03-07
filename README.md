@@ -11,7 +11,7 @@
     Add few items (products) to your DB.
 
 2. Open terminal in backend folder and install required packages. ~npm install.
-   Same operation for backend folder.
+   Same operation for frontend folder.
 
 3. Then start the project, run index.js file in backend folder. ~npm run start
    Run react app in frontend folder. ~npm run start
