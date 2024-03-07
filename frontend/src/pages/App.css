@@ -1,0 +1,127 @@
+.app {
+	display: flex;
+}
+
+.store-panel {
+	width: 200px;
+	background-color: #f5f5f5;
+	border-right: 1px solid #ddd;
+	padding: 20px;
+	position: fixed;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.store-panel h2 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.store-panel ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.store-li {
+	cursor: pointer;
+	padding: 8px;
+	margin-bottom: 5px;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+}
+
+.store-li.active {
+	background-color: #3498db;
+	color: #fff;
+}
+
+.product-panel {
+	background-color: #f1f1f1;
+	flex: 1;
+	padding-left: 50px;
+	margin-left: 240px; /* Добавлен отступ для учета ширины левой панели */
+	min-height: 100vh;
+	padding-right: 40px;
+}
+
+.carttitle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product-panel h2 {
+	font-size: 30px;
+}
+
+.product-list {
+	list-style: none;
+	padding: 0;
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.product-item {
+	width: 400px;
+	margin: 10px;
+	box-sizing: border-box;
+	background-color: #f1f1f1;
+	border: 1px solid #bbbbbb;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 15px;
+}
+
+.product-item:hover img {
+	opacity: 0.5;
+}
+
+.product-item img {
+	width: 100%;
+	height: 150px; /* Установите желаемую высоту изображения */
+	object-fit: cover; /* Это свойство обеспечивает сохранение соотношения сторон при обрезке */
+	margin-bottom: 10px;
+}
+
+.product-item h3 {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.product-item p {
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.cartBtn {
+	background-color: #4caf50;
+	color: #fff;
+	border: none;
+	padding: 8px 12px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.cartBtnMain {
+	background-color: #3498db;
+	outline: none;
+	border: none;
+	padding: 8px 12px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.cartBtn:hover {
+	background-color: #45a049;
+}
